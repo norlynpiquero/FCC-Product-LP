@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #696969;
+
+}
+
+.header-top {
+  height: 75px;
+}
+.main {
+  padding: 1rem;
+  margin: 20px 25px;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #696969;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  background-color: #c2c5cc;
+}
+
+
+#nav-bar ul {
+  list-style: none;
+}
+
+#nav-bar ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#nav-bar li a {
+  text-decoration: none;
+  color: #696969;
+  transition: .5s;
+}
+
+#nav-bar li a:hover {
+  background-color: #696969;
+  color: #fff;
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+
+#header-img {
+  width: 70px;
+  height: 70px;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+video {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 700px;
+  height: 500px;
+}
+
+.video-text > h1 {
+  color: #696969;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: oblique;
+  text-align: center;
+}
+
+.video-text > p {
+  color: #696969;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#form {
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: #696969;
+  margin: 40px 20px;
+  border: 1px solid #C0C0C0;
+}
+
+#form .email {
+  padding: 30px;
+}
+
+#form input {
+  border: 1px solid #C0C0C0;
+  width: 300px;
+  height: 25px;
+}
+
+#form .submit input {
+  background-color: #696969;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  box-shadow: 2px 2px 2px #C0C0C0;
+}
+
+#form .submit {
+  padding: 20px;
+}
+
+.services {
+  background-color: #696969;
+  padding: 20px 50px;
+  margin: 40px 20px;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.detail-services {
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.detail-services:last-child {
+  border-bottom: 0px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.unlimited {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px 50px;
+  padding: 20px 20px;
+  border: 1px solid #696969;
+}
+
+.premium {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px 50px;
+  padding: 20px 20px;
+  border: 1px solid #696969;
+}
+
+.subscribe input {
+  background-color: #696969;
+  height: 40px;
+  width: auto;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #C0C0C0;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  border-top: 1px solid #696969;
+  padding: 20px;
+  font-style: oblique;
+  margin-top: 100px;
+}
+
+/* About */
+#about-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#about-main #about {
+  width: 70%;
+}
+
+#about-main aside {
+  width: 20%;
+}
+
+aside {
+  background-color: #c2c5cc;
+  padding: 5px 5px;
+  margin: 10px 0;
+}
+#about p {
+  text-align: justify;
+}
+
+aside h3 {
+  margin: 0;
+  padding: 5px 5px;
+  color: white;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px 5px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Contact */
+
+.main-contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 60%;
+  background-color: #696969;
+  margin: 50px auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+  color: white;
+}
+
+.main-contact form div {
+  padding: 20px 20px;
+}
+
+.main-contact form label {
+  padding-right: 1rem;
+  font-size: 20px;
+}
+
+.main-contact form input {
+  display: block;
+  margin: 10px 0;
+}
+
+textarea {
+  display: block;
+  margin: 10px 0;
+}
+
+.submit-contact [type="submit"] {
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-left: 30%;
+}
+
+@media (max-width: 768px) {
+  #header-img {
+    display: none;
+  }
+  #nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   video {
+     width: 475px;
+     height: 375px;
+   }
+
+   .fa-4x {
+    font-size: 32px;
+  }
+  .services h2 {
+    font-size: 18px;
+  }
+  .services p {
+    font-size: 14px;
+  }
+   .features {
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+
+   aside h3 {
+     font-size: 15px;
+   }
+
+   aside a {
+     font-size: 12px;
+   }
+
+   #about h1 {
+     font-size: 20px;
+   }
+
+   #about p {
+     font-size: 14px;
+   }
+   .toggle
+ 
+}
